@@ -146,10 +146,47 @@ body {
 }
 
 /* Full battery icon color */
+.green-color {
+    background: var(--gradient-color-green);
+}
 
 /* Battery charging animation */
+.animated-green {
+    background: var(--gradient-color-green);
+    animation: animated-battery-charging 1.5s infinite alternate;
+}
 
 /* Low battery animation */
+.animated-red {
+    background: var(--gradient-color-red);
+    animation: animated-low-battery 1.5s infinite alternate;
+}
+
+.animated-green,
+.animated-red,
+.green-color {
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes animated-battery-charging {
+    0% {
+        text-shadow: none;
+    }
+
+    100% {
+        text-shadow: 0  0 8px hsl(92, 90%, 68%);
+    }
+}
+@keyframes animated-low-battery{
+    0% {
+        text-shadow: none;
+    }
+
+    100% {
+        text-shadow: 0  0 8px hsl(7, 89%, 46%);
+    }
+}
 
 /* Liquid battery with gradient color */
 
