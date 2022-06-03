@@ -189,6 +189,22 @@ body {
 }
 
 /* Liquid battery with gradient color */
+.gradient-color-red,
+.gradient-color-red::after {
+    background: var(--gradient-color-red);
+}
+.gradient-color-orange,
+.gradient-color-orange::after {
+    background: var(--gradient-color-orange);
+}
+.gradient-color-yellow,
+.gradient-color-yellow::after {
+    background: var(--gradient-color-yellow);
+}
+.gradient-color-green,
+.gradient-color-green::after {
+    background: var(--gradient-color-green);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
