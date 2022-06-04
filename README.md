@@ -9,6 +9,8 @@ This is a real time battery level indicator made with HTML, CSS and JS.
 ## What I Learned 
 *  CSS Animations and Keyframes
 *  Advanced Use of Box Shadow to create a 3D effect
+*  I learnt how get access the device battery
+*  I learnt more about event listeners
 
 ## Live Site
 *  Check out the live site [here](https://live-battery-indicator.netlify.app/)
