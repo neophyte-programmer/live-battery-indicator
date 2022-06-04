@@ -54,9 +54,14 @@ const initBattery = () => {
                 batteryLiquid.classList.add('animated-green')
                 batteryLiquid.classList.remove('gradient-color-green', 'gradient-color-orange', 'gradient-color-yellow', 'gradient-color-red')
             }
-		}
+        }
 
-		updateBattery()
+
+        updateBattery()
+        
+        // Battery status events
+        battery.addEventListener('chargingchange', updateBattery)
+        battery.addEventListener('levelchange', updateBattery)
 	})
 }
 
