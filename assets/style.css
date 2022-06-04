@@ -98,7 +98,7 @@ body {
 	font-size: var(--smaller-font-size);
 }
 
-.bettery__status i {
+.battery__status i {
 	font-size: 1.25rem;
 }
 
@@ -162,10 +162,15 @@ body {
 	animation: animated-low-battery 1.5s infinite alternate;
 }
 
-.animated__charge {
+.animated-charge {
 	background: var(--gradient-color-green);
-	animation: animated-charge 1.5s infinite alternate;
+    animation: animated-glow 1.5s infinite alternate;
 }
+
+.animated-charge::after {
+    background: var(--gradient-color-green);
+}
+
 
 .animated-green,
 .animated-red,
@@ -193,13 +198,13 @@ body {
 	}
 }
 
-@keyframes animated-charge {
+@keyframes animated-glow {
 	0% {
-		box-shadow: none;
+		background: hsl(92, 91%, 54%);
 	}
 
 	100% {
-		box-shadow: 0 0 8px hsl(92, 90%, 68%);
+		background: hsl(92, 90%, 68%);
 	}
 }
 

@@ -45,7 +45,7 @@ const initBattery = () => {
 					'gradient-color-orange',
 					'gradient-color-yellow',
 					'animated-charge'
-				)
+                )
 			} else if (level <= 40 && level > 20 && !battery.charging) {
 				batteryLiquid.classList.add('gradient-color-orange')
 				batteryLiquid.classList.remove(
@@ -53,7 +53,7 @@ const initBattery = () => {
 					'gradient-color-red',
 					'gradient-color-yellow',
 					'animated-charge'
-				)
+                )
 			} else if (level <= 80 && level > 40 && !battery.charging) {
 				batteryLiquid.classList.add('gradient-color-yellow')
 				batteryLiquid.classList.remove(
@@ -61,7 +61,7 @@ const initBattery = () => {
 					'gradient-color-orange',
 					'gradient-color-red',
 					'animated-charge'
-				)
+                )
 			} else if (level <= 100 && level > 80 && !battery.charging) {
 				batteryLiquid.classList.add('gradient-color-green')
 				batteryLiquid.classList.remove(
@@ -69,15 +69,15 @@ const initBattery = () => {
 					'gradient-color-orange',
 					'gradient-color-yellow',
 					'animated-charge'
-				)
+                )
 			} else if (battery.charging) {
-				batteryLiquid.classList.add('animated-charge')
+                batteryLiquid.classList.add('animated-charge')
 				batteryLiquid.classList.remove(
 					'gradient-color-green',
 					'gradient-color-orange',
 					'gradient-color-yellow',
 					'gradient-color-red'
-				)
+                )
 			}
 		}
 
