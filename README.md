@@ -16,5 +16,6 @@ This is a real time battery level indicator made with HTML, CSS and JS.
 *  Check out the live site [here](https://live-battery-indicator.netlify.app/)
 
 ## How It Looks
-![Screenshot](https://i.imgur.com/QQQQQQQ.png)
+![Screenshot](assets/screenshots/1.png)
+![Screenshot](assets/screenshots/2.png)
 
