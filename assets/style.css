@@ -134,96 +134,111 @@ body {
 
 .battery__liquid::after {
 	content: '';
-    position: absolute;
-    height: 8px;
-    background: var(--gradient-color-red);
-    box-shadow: inset 0px -3 6px hsla(0, 0%, 0%, 0.2),;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: -4px;
-    border-radius: 50%;
+	position: absolute;
+	height: 8px;
+	background: var(--gradient-color-red);
+	box-shadow: inset 0px -3 6px hsla(0, 0%, 0%, 0.2);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: -4px;
+	border-radius: 50%;
 }
 
 /* Full battery icon color */
 .green-color {
-    background: var(--gradient-color-green);
+	background: var(--gradient-color-green);
 }
 
 /* Battery charging animation */
 .animated-green {
-    background: var(--gradient-color-green);
-    animation: animated-battery-charging 1.5s infinite alternate;
+	background: var(--gradient-color-green);
+	animation: animated-battery-charging 1.5s infinite alternate;
 }
 
 /* Low battery animation */
 .animated-red {
-    background: var(--gradient-color-red);
-    animation: animated-low-battery 1.5s infinite alternate;
+	background: var(--gradient-color-red);
+	animation: animated-low-battery 1.5s infinite alternate;
+}
+
+.animated__charge {
+	background: var(--gradient-color-green);
+	animation: animated-charge 1.5s infinite alternate;
 }
 
 .animated-green,
 .animated-red,
 .green-color {
-    -webkit-background-clip: text;
-    color: transparent;
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 @keyframes animated-battery-charging {
-    0% {
-        text-shadow: none;
-    }
+	0% {
+		text-shadow: none;
+	}
 
-    100% {
-        text-shadow: 0  0 8px hsl(92, 90%, 68%);
-    }
+	100% {
+		text-shadow: 0 0 8px hsl(92, 90%, 68%);
+	}
 }
-@keyframes animated-low-battery{
-    0% {
-        text-shadow: none;
-    }
+@keyframes animated-low-battery {
+	0% {
+		text-shadow: none;
+	}
 
-    100% {
-        text-shadow: 0  0 8px hsl(7, 89%, 46%);
-    }
+	100% {
+		text-shadow: 0 0 8px hsl(7, 89%, 46%);
+	}
+}
+
+@keyframes animated-charge {
+	0% {
+		box-shadow: none;
+	}
+
+	100% {
+		box-shadow: 0 0 8px hsl(92, 90%, 68%);
+	}
 }
 
 /* Liquid battery with gradient color */
 .gradient-color-red,
 .gradient-color-red::after {
-    background: var(--gradient-color-red);
+	background: var(--gradient-color-red);
 }
 .gradient-color-orange,
 .gradient-color-orange::after {
-    background: var(--gradient-color-orange);
+	background: var(--gradient-color-orange);
 }
 .gradient-color-yellow,
 .gradient-color-yellow::after {
-    background: var(--gradient-color-yellow);
+	background: var(--gradient-color-yellow);
 }
 .gradient-color-green,
 .gradient-color-green::after {
-    background: var(--gradient-color-green);
+	background: var(--gradient-color-green);
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
-    .battery__card {
-        zoom: .8;
-    }
+	.battery__card {
+		zoom: 0.8;
+	}
 }
 
 /* For medium devices */
-@media screen and (min-width:430px) {
-    .battery__card {
-        width: 312px;
-    }
+@media screen and (min-width: 430px) {
+	.battery__card {
+		width: 312px;
+	}
 }
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-    .battery__card {
-        zoom: 1.5;
-    }
+	.battery__card {
+		zoom: 1.5;
+	}
 }
