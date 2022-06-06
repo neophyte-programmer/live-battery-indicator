@@ -1,5 +1,6 @@
 # Live Battery Indicator
-This is a real time battery level indicator made with HTML, CSS and JS.
+This is a real time battery level indicator made with HTML, CSS and JS. This application is not supported by iOS devices likes iPhones or Macbooks due to restrictions 
+from Apple.
 
 ## Resources
 * [Google Fonts](https://fonts.google.com/)
